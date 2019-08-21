@@ -9,6 +9,5 @@
   - name : "Machine Credentials"
     debug:
       msg: "{{ lookup('env','username') }} and {{ lookup('env','password') }} is an environment variable"
-
   - win_ping:
   
