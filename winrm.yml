@@ -3,5 +3,7 @@
   hosts: all
   gather_facts: False
   tasks:
- 
   - win_ping:
+- name: "Ansible | List all known variables and facts"
+  debug:
+    var: hostvars[inventory_hostname]
