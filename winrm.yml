@@ -6,6 +6,9 @@
   - name: "Ansible | List all known variables and facts"
     debug:
       var: hostvars[inventory_hostname]
+  - name : "Machine Credentials"
+    debug:
+      msg: ""{{ lookup('env','username') } and { lookup('env','password') }} is an environment variable"
 
   - win_ping:
   
